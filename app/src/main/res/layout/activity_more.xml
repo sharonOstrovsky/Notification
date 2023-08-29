@@ -4,52 +4,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    tools:context=".MainActivity">
-
+    tools:context=".MoreActivity">
 
     <Button
-        android:id="@+id/btn_simpleNotification"
+        android:id="@+id/btn_bigImageNotification"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Simple Notification"
-        app:layout_constraintBottom_toTopOf="@+id/btn_alarmNotification"
+        android:text="Big Image Notification"
+        app:layout_constraintBottom_toTopOf="@+id/btn_bigTextNotification"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_alarmNotification"
+        android:id="@+id/btn_bigTextNotification"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Alarm Notification"
-        app:layout_constraintBottom_toTopOf="@+id/btn_customNotification"
+        android:text="Big Text Notification"
+        app:layout_constraintBottom_toTopOf="@+id/btn_inboxNotification"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_simpleNotification"
+        app:layout_constraintTop_toBottomOf="@id/btn_bigImageNotification"
         />
 
     <Button
-        android:id="@+id/btn_customNotification"
+        android:id="@+id/btn_inboxNotification"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Custom Notification"
+        android:text="Inbox Notification"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/btn_moreNotifications"
-        app:layout_constraintTop_toBottomOf="@id/btn_alarmNotification"
+        app:layout_constraintBottom_toTopOf="@+id/btn_chatNotification"
+        app:layout_constraintTop_toBottomOf="@id/btn_bigTextNotification"
         />
 
     <Button
-        android:id="@+id/btn_moreNotifications"
+        android:id="@+id/btn_chatNotification"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="More Notifications"
+        android:text="Chat Notification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_multimediaNotification"
+        app:layout_constraintTop_toBottomOf="@id/btn_inboxNotification"
+        />
+
+    <Button
+        android:id="@+id/btn_multimediaNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multimedia Notification"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_customNotification"
+        app:layout_constraintTop_toBottomOf="@id/btn_inboxNotification"
         />
+
 
 
 
